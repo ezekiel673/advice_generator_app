@@ -27,7 +27,7 @@ Users should be able to:
 
 ### 📸 Screenshot  
 
-> Add a screenshot of your project here.  
+> ![alt text](design/screenshot.png) 
 
 ### 🌐 Live Demo  
 
