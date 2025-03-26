@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+ :root {
+  --Fsize: 28px;
+  --Lcyan: hsl(193, 38%, 86%);
+  --Ngreen: hsl(150, 100%, 66%);
+  --Gblue: hsl(217, 19%, 38%);
+  --DGblue: hsl(217, 19%, 24%);
+  --Dblue: hsl(218, 23%, 16%)
+
+}
+
+
+body {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  background-color: var(--Dblue);
+  color: var(--Lcyan);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  text-align: center;
+}
+
+.card {
+  background-color: var(--DGblue);
+  padding: 35px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  position: relative;
+}
+.advice-id {
+  font-size: 0.85rem;
+  color: var(--Ngreen);
+  position: absolute;
+  top: 0px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.advice-text {
+  font-size: var(--Fsize);
+  margin-bottom: 20px;
+}
+
+
+.dice-button {
+  background-color:var(--Ngreen);
+  border: none;
+  padding: 15px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  transition: background-color 0.3s ease;
+  position: absolute;
+  left: 50%;
+  bottom: -25px;
+  transform: translateX(-50%);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dice-button img {
+  transition: transform 0.5s ease;
+}
+
+.dice-button:active {
+  background-color: #45a049;
+  animation: rotateButton 0.5s ease;
+}
+
+.dice-button:active img {
+  transform: rotate(360deg);
+}
+
+@keyframes rotateButton {
+  0% { transform: translateX(-50%) rotate(0deg); }
+  100% { transform: translateX(-50%) rotate(360deg); }
+}
+
+
+.card > img{
+  width: 90%;
+  margin-bottom: 20px;
+
+}
+
+
+
+
